@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}} - Sophist.jp | 哲学メディア</title>
+  <meta name="description" content="{{excerpt}}">
+  <meta name="keywords" content="{{keywords}}">
+  <meta name="author" content="Sophist.jp">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{excerpt}}">
+  <meta property="og:url" content="{{url}}">
+  <meta property="og:site_name" content="Sophist.jp">
+  <meta property="og:image" content="https://sophist.jp/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{excerpt}}">
+  <meta name="twitter:image" content="https://sophist.jp/og-image.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{url}}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{title}}",
+    "description": "{{excerpt}}",
+    "datePublished": "{{date}}",
+    "image": "https://sophist.jp/og-image.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Sophist.jp",
+      "url": "https://sophist.jp"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sophist.jp",
+      "url": "https://sophist.jp"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">
+        <span class="logo-main">Sophist</span>
+        <span class="logo-tagline">哲学メディア</span>
+      </a>
+      <div class="nav-controls">
+        <div class="search-box">
+          <input type="text" placeholder="検索...">
+        </div>
+        <button class="dark-toggle" aria-label="Dark mode toggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article-container">
+      <header class="article-header">
+        <h1 class="article-title-main">{{title}}</h1>
+
+        <div class="article-info">
+          <div class="article-info-item">
+            <span class="category-badge">{{category}}</span>
+          </div>
+          <div class="article-info-item">
+            <span>難易度:</span>
+            <span class="difficulty-stars">{{difficulty_stars}}</span>
+          </div>
+          <div class="article-info-item">
+            <span>読了時間:</span>
+            <span data-readtime>5</span>
+          </div>
+        </div>
+      </header>
+
+      <aside class="article-toc" style="display:none;">
+        <h4>目次</h4>
+        <ul></ul>
+      </aside>
+
+      {{share_buttons}}
+
+      <div class="article-content">
+        {{content}}
+      </div>
+
+      {{share_buttons}}
+
+      {{article_nav}}
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sophist.jp. All rights reserved.</p>
+    <p>This work is licensed under a Creative Commons Attribution 4.0 International License.</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
