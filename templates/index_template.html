@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophist.jp | 哲学メディア</title>
+  <meta name="description" content="哲学の基礎から最新の理論まで、わかりやすく解説する日本語の哲学メディアです。古代から現代の哲学的思考を学べます。">
+  <meta name="keywords" content="哲学, 古代哲学, 中世哲学, 近代哲学, 現代哲学, 哲学入門">
+  <meta name="author" content="Sophist.jp">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sophist.jp | 哲学メディア">
+  <meta property="og:description" content="哲学の基礎から最新の理論まで、わかりやすく解説する日本語の哲学メディアです。">
+  <meta property="og:url" content="https://sophist.jp">
+  <meta property="og:site_name" content="Sophist.jp">
+  <meta property="og:image" content="https://sophist.jp/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sophist.jp | 哲学メディィ">
+  <meta name="twitter:description" content="哲学の基礎から最新の理論まで、わかりやすく解説する日本語の哲学メディアです。">
+  <meta name="twitter:image" content="https://sophist.jp/og-image.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://sophist.jp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sophist.jp",
+    "url": "https://sophist.jp",
+    "description": "哲学の基礎から最新の理論まで、わかりやすく解説する日本語の哲学メディアです。",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sophist.jp"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">
+        <span class="logo-main">Sophist</span>
+        <span class="logo-tagline">哲学メディア</span>
+      </a>
+      <div class="nav-controls">
+        <div class="search-box">
+          <input type="text" placeholder="検索...">
+        </div>
+        <button class="dark-toggle" aria-label="Dark mode toggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="text-align: center; margin-bottom: 4rem; padding: 2rem 0;">
+      <h1 style="font-size: 2.5em; margin-bottom: 1rem;">哲学への道を始めよう</h1>
+      <p style="font-size: 1.1em; color: var(--secondary-text); max-width: 600px; margin: 0 auto;">
+        古代ギリシャから21世紀の現代思想まで、わかりやすく体系的に学べる哲学メディアです。
+      </p>
+    </section>
+
+    <div class="category-filter">
+      <button data-category="all" class="active">すべて</button>
+      {{category_buttons}}
+    </div>
+
+    <section class="articles-grid">
+      {{articles}}
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sophist.jp. All rights reserved.</p>
+    <p>This work is licensed under a Creative Commons Attribution 4.0 International License.</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
