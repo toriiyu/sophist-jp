@@ -222,7 +222,8 @@ class ArticleConverter:
         # Replace placeholders
         html = template.replace('{{title}}', article['title'])
         html = html.replace('{{excerpt}}', article['excerpt'])
-        html = html.replace('{{keywords}}', article['keywords'])
+        keywords = article['keywords'] if isinstance(article['keywords'], str) else ', '.join(article['keywords'])
+        html = html.replace('{{keywords}}', keywords)
         html = html.replace('{{url}}', f"https://sophist.jp/articles/{article['slug']}.html")
         html = html.replace('{{date}}', article['date'])
         html = html.replace('{{category}}', article['category'])
